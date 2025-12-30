@@ -15,27 +15,27 @@ export default function CTASection() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            <span className="text-white">Join 500+ Organizations</span>
+            <span className="text-white">Don't Give Up On Your Money</span>
             <br />
-            <span className="text-white">Worldwide</span>
+            <span className="text-white">We Can Help You Get It Back</span>
           </h2>
           <p className="text-xl text-white/90 mb-10">
-            Experience the same level of protection and intelligence that leading organizations across the US, UK, Germany, and beyond rely on every day.
+            Thousands of people have successfully recovered their lost money and assets with our help. Let us fight to get your money back where it belongs.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/contact"
+              href="/contact?type=recovery"
               className="group px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg flex items-center space-x-2"
             >
-              <span>Get Started Today</span>
+              <span>Start Recovery Now</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/contact?type=demo"
+              href="/contact?type=consultation"
               className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/30 rounded-lg font-semibold text-white hover:bg-white/20 transition-all flex items-center space-x-2"
             >
               <Calendar className="w-5 h-5" />
-              <span>Schedule a Demo</span>
+              <span>Free Consultation</span>
             </Link>
           </div>
         </motion.div>

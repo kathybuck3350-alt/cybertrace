@@ -6,6 +6,8 @@ import connectDB from '@/lib/mongodb';
 import ScamType from '@/models/ScamType';
 import { getIcon } from '@/lib/iconMap';
 
+export const dynamic = 'force-dynamic';
+
 async function getScamTypes() {
   try {
     await connectDB();
@@ -37,10 +39,10 @@ export default async function HowWeHelpPage() {
                 <span className="text-sm font-semibold">Fund Recovery Services</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Recover Your Stolen Funds
+                Get Your Money & Assets Back
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
-                CyberRecovery specializes in helping individuals recover funds lost to cryptocurrency scams, romance fraud, investment schemes, and other financial crimes. Our advanced blockchain forensics have recovered over $2.8 billion for victims worldwide.
+                We help people recover their lost money and assets from scams, fraud, and theft. Our expert team uses advanced tracing methods to locate your funds and work with authorities to get them back to you. Every dollar matters, and we fight to recover every penny.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -74,7 +76,7 @@ export default async function HowWeHelpPage() {
                     <Phone className="w-8 h-8 text-red-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">Emergency Hotline</h3>
-                  <p className="text-gray-600 mb-6">24/7 immediate response for recent scam victims</p>
+                  <p className="text-gray-600 mb-6">24/7 support to start recovering your money immediately</p>
                   <a
                     href="tel:1-800-RECOVER"
                     className="inline-block px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-all"
@@ -88,8 +90,8 @@ export default async function HowWeHelpPage() {
                   <div className="inline-flex p-4 rounded-full bg-secondary-100 mb-4">
                     <FileText className="w-8 h-8 text-secondary-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Online Report</h3>
-                  <p className="text-gray-600 mb-6">Submit your case details through our secure portal</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">Start Recovery Case</h3>
+                  <p className="text-gray-600 mb-6">Tell us about your lost money and assets to begin the recovery process</p>
                   <Link
                     href="/contact?type=emergency"
                     className="inline-block px-6 py-3 bg-secondary-600 text-white rounded-lg font-semibold hover:bg-secondary-700 transition-all"
@@ -126,10 +128,10 @@ export default async function HowWeHelpPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
-                Types of Scams We Help Recover From
+                We Help Recover Money From These Scams
               </h2>
               <p className="text-xl text-gray-600 text-center mb-12">
-                We specialize in recovering funds from a wide range of financial scams and fraud schemes
+                Our recovery services help people get their money and assets back from various scams and fraud schemes
               </p>
               {scamTypes.length === 0 ? (
                 <div className="text-center py-12">
@@ -181,29 +183,29 @@ export default async function HowWeHelpPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-                How CyberRecovery Helps You Recover
+                How We Help You Recover Your Money & Assets
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                 {[
                   {
                     icon: Shield,
-                    title: 'Blockchain Forensics',
-                    description: 'Our expert investigators trace stolen funds across the blockchain using advanced analytics and proprietary tools.',
+                    title: 'Trace Your Money',
+                    description: 'We track where your money went using advanced technology to follow the trail of your stolen funds and assets.',
                   },
                   {
                     icon: FileText,
-                    title: 'Evidence Collection',
-                    description: 'We gather comprehensive evidence including transaction records, wallet addresses, and communication logs for law enforcement.',
+                    title: 'Build Your Case',
+                    description: 'We collect all evidence needed to prove your ownership and document every transaction to strengthen your recovery case.',
                   },
                   {
                     icon: CheckCircle2,
-                    title: 'Legal Support',
-                    description: 'We work with law enforcement agencies and legal teams to support your recovery case with professional documentation.',
+                    title: 'Work with Authorities',
+                    description: 'We coordinate with police, banks, and legal teams to freeze accounts and recover your money through official channels.',
                   },
                   {
                     icon: Users,
-                    title: 'Recovery Coordination',
-                    description: 'Our team coordinates with exchanges, authorities, and financial institutions to facilitate fund recovery.',
+                    title: 'Recovery Execution',
+                    description: 'Our team handles negotiations, legal proceedings, and asset recovery to get your money back into your account.',
                   },
                 ].map((feature, index) => {
                   const Icon = feature.icon;
@@ -227,7 +229,7 @@ export default async function HowWeHelpPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-12">
-                Proven Track Record
+                We've Helped Thousands Recover Their Money
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                 <div>
@@ -236,11 +238,11 @@ export default async function HowWeHelpPage() {
                 </div>
                 <div>
                   <div className="text-5xl font-bold mb-2">$2.8B+</div>
-                  <div className="text-xl text-white/90">Recovered Worldwide</div>
+                  <div className="text-xl text-white/90">Money Recovered</div>
                 </div>
                 <div>
                   <div className="text-5xl font-bold mb-2">10K+</div>
-                  <div className="text-xl text-white/90">Cases Resolved</div>
+                  <div className="text-xl text-white/90">People Helped</div>
                 </div>
               </div>
             </div>
@@ -252,17 +254,17 @@ export default async function HowWeHelpPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-                Don't Let Scammers Win
+                Your Money Deserves to Come Back Home
               </h2>
               <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-                Every day you wait reduces your chances of recovery. Our expert team is ready to start investigating your case immediately. With a 73% success rate and over $2.8 billion recovered, we're your best chance at getting your funds back.
+                Time is critical when it comes to recovering stolen money and assets. The sooner we start, the better your chances of getting everything back. Our proven recovery methods have helped thousands of people reclaim their lost funds. Don't give up - let us fight to get your money back where it belongs.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                 <Link
                   href="/contact?type=recovery"
                   className="px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 text-white rounded-lg font-semibold hover:from-primary-500 hover:to-secondary-500 transition-all shadow-lg"
                 >
-                  Start Your Recovery Today
+                  Get Your Money Back Now
                 </Link>
                 <Link
                   href="/contact?type=consultation"

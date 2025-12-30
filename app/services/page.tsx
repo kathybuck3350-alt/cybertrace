@@ -8,87 +8,87 @@ import { Shield, Search, Eye, Lock, AlertTriangle, ChevronDown, ChevronUp } from
 
 const services = [
   {
-    category: 'AML Compliance',
+    category: 'Money Tracing',
     icon: Shield,
     color: 'from-primary-500 to-primary-600',
     services: [
       {
-        title: 'Sentry',
-        description: 'Real-time transaction monitoring and risk scoring for cryptocurrency transactions. Comprehensive AML compliance solution that helps businesses meet regulatory requirements.',
-        features: ['Real-time monitoring', 'Risk scoring', 'Regulatory reporting', 'Automated alerts']
+        title: 'Fund Location',
+        description: 'We trace where your stolen money went using advanced tracking technology. We follow the trail through banks, crypto exchanges, and payment systems to locate your funds.',
+        features: ['Transaction tracking', 'Account identification', 'Flow analysis', 'Asset location']
       },
       {
-        title: 'Traveler',
-        description: 'Travel rule compliance solution for cryptocurrency transactions. Ensures compliance with FATF recommendations and global regulatory requirements.',
-        features: ['Travel rule compliance', 'Cross-border transactions', 'Regulatory reporting', 'Data protection']
+        title: 'Account Freezing',
+        description: 'We work with authorities and banks to freeze accounts containing your stolen money, preventing further movement and securing your assets for recovery.',
+        features: ['Bank coordination', 'Account freezing', 'Asset protection', 'Legal support']
       }
     ]
   },
   {
-    category: 'Blockchain Forensics',
+    category: 'Recovery Process',
     icon: Search,
     color: 'from-secondary-500 to-secondary-600',
     services: [
       {
-        title: 'Inspector',
-        description: 'Advanced blockchain forensics tool for investigating cryptocurrency transactions. Trace funds, analyze transaction patterns, and identify suspicious activity.',
-        features: ['Transaction analysis', 'Address clustering', 'Fund flow tracking', 'Visual analytics']
+        title: 'Evidence Collection',
+        description: 'We gather all necessary evidence including transaction records, communications, and documentation to prove your ownership and build a strong recovery case.',
+        features: ['Document collection', 'Transaction records', 'Communication logs', 'Ownership proof']
       },
       {
-        title: 'Case Management',
-        description: 'Comprehensive case management system for organizing and tracking investigations. Streamline workflows and collaborate with team members.',
-        features: ['Case tracking', 'Team collaboration', 'Document management', 'Reporting tools']
+        title: 'Recovery Execution',
+        description: 'Our team handles the entire recovery process including negotiations, legal proceedings, and coordination with banks and authorities to get your money back.',
+        features: ['Recovery coordination', 'Legal proceedings', 'Bank negotiations', 'Asset return']
       }
     ]
   },
   {
-    category: 'Threat Intelligence',
+    category: 'Authority Coordination',
     icon: Eye,
     color: 'from-accent-500 to-accent-600',
     services: [
       {
-        title: 'Armada',
-        description: 'Comprehensive threat intelligence platform providing real-time monitoring and analysis of cryptocurrency-related threats.',
-        features: ['Threat monitoring', 'Risk assessment', 'Intelligence feeds', 'Alert system']
+        title: 'Police Cooperation',
+        description: 'We work directly with law enforcement agencies to report fraud, provide evidence, and coordinate efforts to recover your stolen money through official channels.',
+        features: ['Police reports', 'Evidence submission', 'Case coordination', 'Investigation support']
       },
       {
-        title: 'Risk Scoring',
-        description: 'Advanced risk scoring algorithm that evaluates the risk level of cryptocurrency addresses and transactions.',
-        features: ['Automated risk scoring', 'Address analysis', 'Transaction risk', 'Customizable thresholds']
+        title: 'Legal Support',
+        description: 'Our legal team supports your recovery case by preparing documentation, coordinating with lawyers, and navigating the legal process to get your money back.',
+        features: ['Legal documentation', 'Lawyer coordination', 'Court support', 'Case preparation']
       }
     ]
   },
   {
-    category: 'De-Anonymization',
+    category: 'Scam Types',
     icon: Lock,
     color: 'from-primary-400 to-secondary-400',
     services: [
       {
-        title: 'Attribution Engine',
-        description: 'Cutting-edge technology to identify entities behind cryptocurrency addresses and transactions.',
-        features: ['Entity identification', 'Address attribution', 'Pattern recognition', 'Data enrichment']
+        title: 'Crypto Scam Recovery',
+        description: 'We recover money lost to cryptocurrency scams including fake exchanges, investment schemes, and wallet theft. We trace crypto transactions and work to recover your digital assets.',
+        features: ['Crypto tracing', 'Exchange coordination', 'Wallet recovery', 'Asset recovery']
       },
       {
-        title: 'Dark Web Intelligence',
-        description: 'Monitor and analyze dark web activities related to cryptocurrency fraud and illegal transactions.',
-        features: ['Dark web monitoring', 'Threat intelligence', 'Illicit activity detection', 'Reporting']
+        title: 'Romance & Investment Fraud',
+        description: 'We help recover money lost to romance scams, fake investment opportunities, and online fraud schemes. We track the money trail and coordinate with authorities.',
+        features: ['Fraud investigation', 'Bank tracing', 'Payment recovery', 'Authority coordination']
       }
     ]
   },
   {
-    category: 'Ransomware Detection',
+    category: 'Support Services',
     icon: AlertTriangle,
     color: 'from-secondary-500 to-accent-500',
     services: [
       {
-        title: 'Ransomware Payment Tracking',
-        description: 'Specialized detection and tracking of ransomware-related cryptocurrency transactions and payments.',
-        features: ['Ransomware tracking', 'Payment analysis', 'Victim identification', 'Recovery assistance']
+        title: '24/7 Support',
+        description: 'Our recovery team is available around the clock to help you start the recovery process immediately. Time is critical when recovering stolen money.',
+        features: ['24/7 availability', 'Quick response', 'Emergency support', 'Case initiation']
       },
       {
-        title: 'Proactive Defense',
-        description: 'Prevent ransomware attacks before they occur with advanced threat detection and blocking capabilities.',
-        features: ['Threat prevention', 'Behavioral analysis', 'Network monitoring', 'Automated blocking']
+        title: 'Free Consultation',
+        description: 'Get a free consultation to discuss your case. We'll assess your situation and explain how we can help recover your lost money and assets.',
+        features: ['Free assessment', 'Case evaluation', 'Recovery plan', 'Transparent pricing']
       }
     ]
   }
@@ -106,10 +106,10 @@ export default function ServicesPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="gradient-text">Our Services</span>
+                <span className="gradient-text">Our Recovery Services</span>
               </h1>
               <p className="text-xl text-gray-600">
-                Comprehensive blockchain intelligence solutions for your organization.
+                We help you recover your lost money and assets from scams, fraud, and theft.
               </p>
             </div>
           </div>
@@ -175,16 +175,16 @@ export default function ServicesPage() {
         <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Enhance Your Crypto Security?
+              Ready to Get Your Money Back?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Our experts are here to help you find the right solutions for your specific needs.
+              Our recovery experts are ready to help you recover your lost money and assets. Contact us today to start your recovery case.
             </p>
             <Link
               href="/contact"
               className="inline-block px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
             >
-              Contact Us for Solutions
+              Start Your Recovery
             </Link>
           </div>
         </section>

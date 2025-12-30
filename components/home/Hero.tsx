@@ -30,36 +30,36 @@ export default function Hero() {
             className="inline-flex items-center space-x-2 mb-6 px-4 py-2 bg-primary-50 rounded-full border border-primary-200 shadow-sm"
           >
             <Zap className="w-4 h-4 text-primary-400" />
-            <span className="text-sm text-primary-700">AI-Powered Blockchain Intelligence</span>
+            <span className="text-sm text-primary-700">Expert Money Recovery Services</span>
           </motion.div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            <span className="gradient-text">CyberRecovery:</span>
+            <span className="gradient-text">Get Your Money Back</span>
             <br />
-            <span className="text-gray-900">Securing Your Crypto Future</span>
+            <span className="text-gray-900">We Help Recover Lost Assets</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-10 max-w-3xl mx-auto">
-            World-class blockchain intelligence to combat fraud and protect your assets.
+            We help people recover their lost money and assets from scams, fraud, and theft.
             <span className="block mt-2 text-lg text-gray-600">
-              Powered by advanced AI analytics and cutting-edge forensics.
+              Our expert team traces your funds and works with authorities to get your money back where it belongs.
             </span>
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/services"
+              href="/how-we-help"
               className="group px-8 py-4 bg-gradient-to-r from-primary-600 to-secondary-600 rounded-lg font-semibold text-white hover:from-primary-500 hover:to-secondary-500 transition-all cyber-glow flex items-center space-x-2"
             >
-              <span>Explore Services</span>
+              <span>Start Recovery</span>
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link
-              href="/contact?type=scam"
+              href="/contact?type=recovery"
                   className="px-8 py-4 bg-white border border-primary-500 rounded-lg font-semibold text-primary-600 hover:bg-primary-50 transition-all flex items-center space-x-2 shadow-sm"
             >
               <Shield className="w-5 h-5" />
-              <span>Report a Scam</span>
+              <span>Get Free Consultation</span>
             </Link>
           </div>
 
@@ -71,10 +71,10 @@ export default function Hero() {
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto"
           >
             {[
-              { value: '500+', label: 'Global Clients' },
-              { value: '$2.8B+', label: 'Assets Recovered' },
-              { value: '50+', label: 'Countries Served' },
-              { value: '99.9%', label: 'Uptime' },
+              { value: '10K+', label: 'People Helped' },
+              { value: '$2.8B+', label: 'Money Recovered' },
+              { value: '73%', label: 'Success Rate' },
+              { value: '24/7', label: 'Support Available' },
             ].map((stat, index) => (
               <div key={index} className="bg-white rounded-lg p-4 border border-gray-200 shadow-sm">
                 <div className="text-2xl md:text-3xl font-bold gradient-text">{stat.value}</div>

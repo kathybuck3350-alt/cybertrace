@@ -31,16 +31,16 @@ export default function Home() {
         <section className="py-20 bg-gradient-to-r from-primary-600 to-secondary-600">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              Ready to Enhance Your Crypto Security?
+              Ready to Recover Your Money?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Our experts are here to help you find the right solutions for your specific needs.
+              Our recovery experts are ready to help you get your money and assets back. Contact us today to start your recovery case.
             </p>
             <Link
-              href="/contact"
+              href="/contact?type=recovery"
               className="inline-block px-8 py-4 bg-white text-primary-600 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
             >
-              Contact Us for Solutions
+              Get Your Money Back Now
             </Link>
           </div>
         </section>

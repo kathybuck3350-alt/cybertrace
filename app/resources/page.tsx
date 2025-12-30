@@ -34,15 +34,15 @@ const blogPosts = [
 const resources = [
   {
     icon: BookOpen,
-    title: 'Blog',
-    description: 'Stay informed with the latest trends, threats, and best practices in cryptocurrency security.',
+    title: 'Recovery Blog',
+    description: 'Learn about money recovery success stories, scam prevention tips, and how to get your funds back.',
     href: '/resources',
     color: 'from-primary-500 to-primary-600'
   },
   {
     icon: Shield,
-    title: 'Security Guides',
-    description: 'Comprehensive guides to help you secure your cryptocurrency investments and transactions.',
+    title: 'Recovery Guides',
+    description: 'Step-by-step guides to help you understand the recovery process and what to expect when recovering your money.',
     href: '/resources',
     color: 'from-secondary-500 to-secondary-600'
   },
@@ -72,10 +72,10 @@ export default function ResourcesPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                <span className="gradient-text">Resources</span>
+                <span className="gradient-text">Recovery Resources</span>
               </h1>
               <p className="text-xl text-gray-600 mb-12">
-                Educational content and guides to help you navigate the crypto space safely.
+                Helpful guides and information to assist you in recovering your lost money and assets.
               </p>
             </div>
           </div>
@@ -111,9 +111,9 @@ export default function ResourcesPage() {
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Insights</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Recovery Insights</h2>
               <p className="text-xl text-gray-600">
-                Stay informed with the latest trends, threats, and best practices in cryptocurrency security and blockchain intelligence.
+                Learn about successful money recovery cases, common scams, and how we help people get their money back.
               </p>
             </div>
 
