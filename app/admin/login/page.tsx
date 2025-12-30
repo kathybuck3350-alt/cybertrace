@@ -51,7 +51,7 @@ export default function AdminLogin() {
               <Shield className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-3xl font-bold gradient-text mb-2">Admin Login</h1>
-            <p className="text-gray-600">CyberTrace Admin Dashboard</p>
+            <p className="text-gray-600">CyberRecovery Admin Dashboard</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">

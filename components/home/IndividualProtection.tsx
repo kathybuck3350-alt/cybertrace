@@ -46,7 +46,7 @@ const steps = [
   {
     number: '4',
     title: 'Seek Professional Help',
-    description: 'Contact CyberTrace for advanced blockchain forensics assistance',
+    description: 'Contact CyberRecovery for advanced blockchain forensics assistance',
   },
 ];
 
@@ -64,7 +64,7 @@ export default function IndividualProtection() {
             <span className="gradient-text">Individual Protection</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Whether you're a victim of crypto fraud or want to protect your investments, CyberTrace provides the tools and expertise to secure your digital assets.
+            Whether you're a victim of crypto fraud or want to protect your investments, CyberRecovery provides the tools and expertise to secure your digital assets.
           </p>
         </motion.div>
 

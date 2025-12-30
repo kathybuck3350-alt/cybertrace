@@ -40,7 +40,7 @@ export default async function HowWeHelpPage() {
                 Recover Your Stolen Funds
               </h1>
               <p className="text-xl md:text-2xl text-white/90 mb-10 leading-relaxed">
-                CyberTrace specializes in helping individuals recover funds lost to cryptocurrency scams, romance fraud, investment schemes, and other financial crimes. Our advanced blockchain forensics have recovered over $2.8 billion for victims worldwide.
+                CyberRecovery specializes in helping individuals recover funds lost to cryptocurrency scams, romance fraud, investment schemes, and other financial crimes. Our advanced blockchain forensics have recovered over $2.8 billion for victims worldwide.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Link
@@ -181,7 +181,7 @@ export default async function HowWeHelpPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
-                How CyberTrace Helps You Recover
+                How CyberRecovery Helps You Recover
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                 {[

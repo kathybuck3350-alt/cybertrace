@@ -1,4 +1,4 @@
-# CyberTrace - Futuristic Blockchain Intelligence Platform
+# CyberRecovery - Futuristic Blockchain Intelligence Platform
 
 A Next.js-based platform for blockchain intelligence and AML compliance solutions, featuring AI-powered analytics and an admin dashboard.
 

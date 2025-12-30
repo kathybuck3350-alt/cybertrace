@@ -25,13 +25,13 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-1 sm:space-x-2 group">
             <Image
               src="/images/logo.png"
-              alt="CyberTrace Logo"
+              alt="CyberRecovery Logo"
               width={40}
               height={40}
               className="h-8 w-8 sm:h-10 sm:w-10"
               priority
             />
-            <span className="text-lg sm:text-xl md:text-2xl font-bold gradient-text hidden min-[375px]:inline-block">CyberTrace</span>
+            <span className="text-lg sm:text-xl md:text-2xl font-bold gradient-text hidden min-[375px]:inline-block">CyberRecovery</span>
           </Link>
 
           {/* Desktop Navigation */}

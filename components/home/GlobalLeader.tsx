@@ -34,7 +34,7 @@ export default function GlobalLeader() {
             <span className="gradient-text">Trusted Worldwide</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From Silicon Valley startups to European banks, CyberTrace protects the global crypto economy
+            From Silicon Valley startups to European banks, CyberRecovery protects the global crypto economy
           </p>
         </motion.div>
 

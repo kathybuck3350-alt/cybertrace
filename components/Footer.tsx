@@ -21,7 +21,7 @@ export default function Footer() {
   const reportScamLinks = [
     { href: 'https://www.ic3.gov', label: 'IC3.gov (US)', external: true },
     { href: 'https://www.actionfraud.police.uk', label: 'ActionFraud (UK)', external: true },
-    { href: '/contact?type=scam', label: 'Contact CyberTrace' },
+    { href: '/contact?type=scam', label: 'Contact CyberRecovery' },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="inline-block">
-              <span className="text-2xl font-bold gradient-text">CyberTrace</span>
+              <span className="text-2xl font-bold gradient-text">CyberRecovery</span>
             </Link>
             <p className="text-gray-600 text-sm">
               Securing the crypto economy through world-class blockchain intelligence and AML compliance solutions.
@@ -115,7 +115,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
           <p className="text-gray-600 text-sm">
-            © {currentYear} CyberTrace. All rights reserved.
+            © {currentYear} CyberRecovery. All rights reserved.
           </p>
           <div className="flex space-x-6">
             <Link href="/contact" className="text-gray-600 hover:text-primary-600 transition-colors text-sm">

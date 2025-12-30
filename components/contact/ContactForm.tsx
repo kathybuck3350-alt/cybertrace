@@ -194,7 +194,7 @@ function ContactFormContent() {
                   </a>
                 </div>
                 <p className="text-sm text-gray-600 mt-4">
-                  Note: CyberTrace provides intelligence tools but does not directly handle individual scam recovery cases. Reporting to authorities is a crucial first step.
+                  Note: CyberRecovery provides intelligence tools but does not directly handle individual scam recovery cases. Reporting to authorities is a crucial first step.
                 </p>
               </div>
             </div>

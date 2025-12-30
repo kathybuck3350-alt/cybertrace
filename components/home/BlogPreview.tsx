@@ -10,7 +10,7 @@ const blogPosts = [
     category: 'Security',
     date: new Date('2024-12-15'),
     title: '5 Red Flags to Identify Cryptocurrency Scams Before It\'s Too Late',
-    description: 'Protect yourself from crypto fraud by recognizing the warning signs. Learn about common scam patterns, phishing tactics, and how CyberTrace helps victims recover stolen funds.',
+    description: 'Protect yourself from crypto fraud by recognizing the warning signs. Learn about common scam patterns, phishing tactics, and how CyberRecovery helps victims recover stolen funds.',
     readTime: '5 min read',
     href: '/resources',
   },

@@ -88,7 +88,7 @@ export async function analyzeContactForm(
 const aiResponses = {
   greeting: [
     "Hello! I'm here to help you manage contacts and analyze data. How can I assist you today?",
-    "Hi there! I'm your AI assistant for the CyberTrace admin dashboard. What would you like to know?",
+    "Hi there! I'm your AI assistant for the CyberRecovery admin dashboard. What would you like to know?",
   ],
   contacts: [
     "I can help you analyze contact patterns and suggest status updates. Would you like to review pending contacts?",

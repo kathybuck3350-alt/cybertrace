@@ -24,13 +24,13 @@ export default function AdminHeader() {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/images/logo.png"
-              alt="CyberTrace Logo"
+              alt="CyberRecovery Logo"
               width={32}
               height={32}
               className="h-8 w-auto"
               priority
             />
-            <span className="text-xl font-bold gradient-text">CyberTrace</span>
+            <span className="text-xl font-bold gradient-text">CyberRecovery</span>
             <span className="text-sm text-gray-600">Admin</span>
           </Link>
           <button

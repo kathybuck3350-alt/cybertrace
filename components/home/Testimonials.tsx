@@ -5,7 +5,7 @@ import { CheckCircle2, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    quote: "CyberTrace's AML solutions helped us achieve regulatory compliance across all 50 states. Their blockchain forensics recovered $2.3M in stolen funds for our clients.",
+    quote: "CyberRecovery's AML solutions helped us achieve regulatory compliance across all 50 states. Their blockchain forensics recovered $2.3M in stolen funds for our clients.",
     highlight: 'Recovered $2.3M in stolen funds',
     author: 'Sarah Mitchell',
     role: 'Compliance Director',
@@ -13,7 +13,7 @@ const testimonials = [
     location: '🇺🇸 New York, USA',
   },
   {
-    quote: "Working with CyberTrace transformed our cryptocurrency investigations. We've successfully traced and recovered assets in over 200 fraud cases this year.",
+    quote: "Working with CyberRecovery transformed our cryptocurrency investigations. We've successfully traced and recovered assets in over 200 fraud cases this year.",
     highlight: '200+ successful fraud cases',
     author: 'James Thompson',
     role: 'Financial Crime Investigator',
@@ -21,7 +21,7 @@ const testimonials = [
     location: '🇬🇧 London, UK',
   },
   {
-    quote: "CyberTrace's threat intelligence platform prevented 15 major ransomware attacks on our infrastructure. Their real-time monitoring is exceptional.",
+    quote: "CyberRecovery's threat intelligence platform prevented 15 major ransomware attacks on our infrastructure. Their real-time monitoring is exceptional.",
     highlight: 'Prevented 15 ransomware attacks',
     author: 'Dr. Klaus Weber',
     role: 'Head of Digital Security',
@@ -29,7 +29,7 @@ const testimonials = [
     location: '🇩🇪 Berlin, Germany',
   },
   {
-    quote: "Since implementing CyberTrace, we've reduced crypto-related fraud by 89%. Their de-anonymization tools are industry-leading.",
+    quote: "Since implementing CyberRecovery, we've reduced crypto-related fraud by 89%. Their de-anonymization tools are industry-leading.",
     highlight: '89% reduction in fraud',
     author: 'Maria Rodriguez',
     role: 'Fraud Prevention Manager',
@@ -37,7 +37,7 @@ const testimonials = [
     location: '🇪🇸 Madrid, Spain',
   },
   {
-    quote: "CyberTrace helped us maintain compliance with Japan's strict crypto regulations while processing $500M+ in daily transactions.",
+    quote: "CyberRecovery helped us maintain compliance with Japan's strict crypto regulations while processing $500M+ in daily transactions.",
     highlight: '$500M+ daily transactions secured',
     author: 'Hiroshi Tanaka',
     role: 'Risk Management Director',
@@ -45,7 +45,7 @@ const testimonials = [
     location: '🇯🇵 Tokyo, Japan',
   },
   {
-    quote: "The blockchain analytics from CyberTrace identified suspicious patterns that saved our institution from a $50M money laundering scheme.",
+    quote: "The blockchain analytics from CyberRecovery identified suspicious patterns that saved our institution from a $50M money laundering scheme.",
     highlight: 'Prevented $50M laundering scheme',
     author: 'Emma Johnson',
     role: 'Cybersecurity Analyst',
@@ -70,7 +70,7 @@ export default function Testimonials() {
             <span className="text-gray-900">Across the Globe</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From law enforcement agencies to financial institutions, organizations worldwide trust CyberTrace
+            From law enforcement agencies to financial institutions, organizations worldwide trust CyberRecovery
           </p>
         </motion.div>
 
