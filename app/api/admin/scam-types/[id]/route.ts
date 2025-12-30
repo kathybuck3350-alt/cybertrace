@@ -3,6 +3,9 @@ import connectDB from '@/lib/mongodb';
 import ScamType from '@/models/ScamType';
 import { requireAuth } from '@/lib/auth';
 
+
+export const dynamic = "force-dynamic";
+
 // PUT update a single scam type
 export async function PUT(
   request: NextRequest,
