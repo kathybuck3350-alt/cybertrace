@@ -87,7 +87,7 @@ const services = [
       },
       {
         title: 'Free Consultation',
-        description: 'Get a free consultation to discuss your case. We'll assess your situation and explain how we can help recover your lost money and assets.',
+        description: 'Get a free consultation to discuss your case. We will assess your situation and explain how we can help recover your lost money and assets.',
         features: ['Free assessment', 'Case evaluation', 'Recovery plan', 'Transparent pricing']
       }
     ]
