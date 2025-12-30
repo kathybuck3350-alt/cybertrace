@@ -7,7 +7,7 @@ import ScamType from '@/models/ScamType';
 import { getIcon } from '@/lib/iconMap';
 
 export const dynamic = 'force-dynamic';
-
+ 
 async function getScamTypes() {
   try {
     await connectDB();
