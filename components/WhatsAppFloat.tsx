@@ -9,7 +9,7 @@ interface WhatsAppFloatProps {
 }
 
 export default function WhatsAppFloat({ 
-  phoneNumber = '', 
+  phoneNumber = '7624096652', 
   message = 'Hello, I need assistance' 
 }: WhatsAppFloatProps) {
   // Construct WhatsApp URL

@@ -8,10 +8,10 @@ export async function POST(request: NextRequest) {
     await connectDB();
 
     const body = await request.json();
-    const { fullName, email, subject, message } = body;
+    const { fullName, email, number, subject, message } = body;
 
     // Validate input
-    if (!fullName || !email || !subject || !message) {
+    if (!fullName || !email || !number || !subject || !message) {
       return NextResponse.json(
         { error: 'All fields are required' },
         { status: 400 }
@@ -26,6 +26,7 @@ export async function POST(request: NextRequest) {
       fullName,
       email,
       subject,
+      number,
       message,
       status: 'new',
       aiSentiment: aiAnalysis.sentiment,

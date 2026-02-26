@@ -8,6 +8,7 @@ interface Contact {
   _id: string;
   fullName: string;
   email: string;
+  number: string;
   subject: string;
   message: string;
   status: string;
@@ -137,6 +138,7 @@ export default function ContactsTable() {
             <tr className="border-b border-gray-200">
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Name</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Email</th>
+              <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Number</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Subject</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Status</th>
               <th className="text-left py-3 px-4 text-sm font-semibold text-gray-700">Priority</th>
@@ -151,6 +153,7 @@ export default function ContactsTable() {
                 <tr key={contact._id} className="border-b border-gray-100 hover:bg-gray-50">
                   <td className="py-3 px-4 text-gray-900">{contact.fullName}</td>
                   <td className="py-3 px-4 text-gray-600">{contact.email}</td>
+                  <td className="py-3 px-4 text-gray-600">{contact.number ? contact.number : "------"}</td>
                   <td className="py-3 px-4 text-gray-700">{contact.subject}</td>
                   <td className="py-3 px-4">
                     <span className={`inline-flex items-center space-x-1 px-2 py-1 rounded-full text-xs font-semibold border ${statusColors[contact.status] || statusColors.new}`}>

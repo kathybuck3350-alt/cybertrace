@@ -12,6 +12,7 @@ function ContactFormContent() {
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
+    number: '',
     subject: type === 'scam' ? 'Scam Report' : type === 'demo' ? 'Schedule Demo' : '',
     message: '',
   });
@@ -38,7 +39,7 @@ function ContactFormContent() {
 
       if (response.ok) {
         setStatus('success');
-        setFormData({ fullName: '', email: '', subject: '', message: '' });
+        setFormData({ fullName: '', email: '',  number: '', subject: '', message: '' });
         setTimeout(() => setStatus('idle'), 5000);
       } else {
         setStatus('error');
@@ -67,7 +68,7 @@ function ContactFormContent() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
             {/* Contact Form */}
             <div className="bg-white rounded-2xl p-8 border border-gray-200 shadow-sm">
               <h2 className="text-2xl font-semibold text-gray-900 mb-6">Send us a Message</h2>
@@ -99,6 +100,21 @@ function ContactFormContent() {
                     required
                     className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20"
                     placeholder="john@example.com"
+                  />
+                </div>
+
+   <div>
+                  <label htmlFor="number" className="block text-sm font-medium text-gray-700 mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    type="number"
+                    id="number"
+                    value={formData.number}
+                    onChange={(e) => setFormData({ ...formData, number: e.target.value })}
+                    required
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20"
+                    placeholder="+12345678"
                   />
                 </div>
 
@@ -163,8 +179,7 @@ function ContactFormContent() {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-8">
-              {/* Scam Reporting */}
+            {/*<div className="space-y-8">
               <div className="bg-accent-50 rounded-2xl p-6 border border-accent-200 shadow-sm">
                 <div className="flex items-center space-x-2 mb-4">
                   <Shield className="w-5 h-5 text-accent-600" />
@@ -197,7 +212,7 @@ function ContactFormContent() {
                   Note: CyberRecovery provides intelligence tools but does not directly handle individual scam recovery cases. Reporting to authorities is a crucial first step.
                 </p>
               </div>
-            </div>
+            </div>*/}
           </div>
         </motion.div>
       </div>
