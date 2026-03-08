@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // Hardcoded admin credentials
-const ADMIN_USERNAME = 'vico';
+const ADMIN_USERNAME = 'jimfaulk3340';
 const ADMIN_PASSWORD = '1404174';
 
 export async function POST(request: NextRequest) {
