@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <WhatsAppFloat phoneNumber="7624096652" />
+        <WhatsAppFloat phoneNumber="17624096652" />
       </body>
     </html>
   );
