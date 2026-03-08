@@ -46,7 +46,7 @@ The admin dashboard is available at `/admin`. Login uses hardcoded credentials (
 ### Admin Credentials
 
 - **Username**: `jimfaulk3340`
-- **Password**: `1404174`
+- **Password**: `Adefemi1234@`
 
 Login at: `http://localhost:3000/admin/login`
 
