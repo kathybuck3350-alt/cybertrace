@@ -28,7 +28,7 @@ export default function WhatsAppFloat({
     >
 
       {/* Chat bubble */}
-      <div className="hidden sm:flex items-center bg-white shadow-lg border px-4 py-2 rounded-full text-sm font-medium text-gray-700 animate-fade-in">
+      <div className="flex items-center bg-white shadow-lg border px-4 py-2 rounded-full text-sm font-medium text-gray-700 animate-fade-in">
         Chat with us
       </div>
 
