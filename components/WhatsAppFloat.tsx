@@ -24,14 +24,28 @@ export default function WhatsAppFloat({
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 1, type: 'spring', stiffness: 200 }}
-      className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3"
+      className="fixed bottom-20 right-5 sm:right-6 z-50 flex items-center gap-3"
     >
 
       {/* Chat bubble */}
-      <div className="flex items-center bg-white shadow-lg border px-4 py-2 rounded-full text-sm font-medium text-gray-700 animate-fade-in">
+      <div className="flex items-center bg-white shadow-lg border px-3 py-2 sm:px-4 rounded-full text-xs sm:text-sm font-medium text-gray-700">
         Chat with us
       </div>
 
+      {/* Pointer animation */}
+      <motion.div
+        animate={{ y: [0, -10, 0] }}
+        transition={{
+          duration: 1.2,
+          repeat: Infinity,
+          ease: "easeInOut"
+        }}
+        className="absolute right-3 bottom-20 text-3xl pointer-events-none"
+      >
+        👇
+      </motion.div>
+
+      {/* WhatsApp button */}
       <Link
         href={whatsappUrl}
         target="_blank"
@@ -41,15 +55,15 @@ export default function WhatsAppFloat({
       >
 
         {/* Pulse animation */}
-        <span className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-75"></span>
+        <span className="absolute inset-0 bg-[#25D366] rounded-full animate-ping opacity-70"></span>
 
-        {/* WhatsApp icon */}
+        {/* WhatsApp Icon */}
         <svg
           className="relative w-7 h-7 sm:w-8 sm:h-8 text-white"
           fill="currentColor"
           viewBox="0 0 24 24"
         >
-          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+          <path d="M12.04 2C6.58 2 2.16 6.42 2.16 11.88c0 1.92.5 3.73 1.47 5.33L2 22l4.92-1.29c1.55.85 3.3 1.29 5.12 1.29h.01c5.46 0 9.88-4.42 9.88-9.88S17.5 2 12.04 2zm5.76 14.33c-.24.67-1.4 1.24-1.93 1.32-.5.08-1.14.11-1.84-.11-.43-.13-.98-.32-1.69-.63-2.97-1.28-4.91-4.44-5.06-4.65-.15-.21-1.2-1.6-1.2-3.05s.76-2.16 1.03-2.46c.27-.29.59-.37.79-.37.2 0 .4 0 .57.01.18.01.42-.07.65.48.24.58.82 2 .89 2.15.07.16.12.34.02.55-.1.21-.15.34-.3.52-.15.18-.31.4-.44.54-.15.15-.31.31-.13.61.18.3.81 1.34 1.74 2.17 1.2 1.07 2.21 1.4 2.52 1.56.31.15.49.13.67-.08.18-.21.79-.93 1-1.25.21-.31.42-.26.71-.16.29.1 1.82.86 2.13 1.02.31.15.52.23.6.36.08.13.08.76-.16 1.43z"/>
         </svg>
 
       </Link>
